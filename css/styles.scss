@@ -1,4 +1,15 @@
 /*variables*/
+
+$color-primario1: #1d1b26;
+$color-primario2: #fff;
+$background-parrafos:#1a1a1a;
+$background-frasesteve-jobs:#f4f2f9;
+$color-titulos: #212529;
+$color-parrafos:#989ca0;
+$border-botones: #fd2d55;
+$fuente1: 'Andika New Basic', sans-serif;
+$fuente2:'El Messiri', sans-serif;
+$color-border:rgb(66 64 73);
 /*
 --blue: #007bff;
 --indigo: #6610f2;
@@ -41,11 +52,21 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+    font-size:1rem;
 }
-body{
-    font-size: 62.5%;
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
 }
 header{
+    display:grid;
+    grid-template-columns: auto 12%;
+    align-items: center;
+    background-color: $color-primario1;
+    border-bottom: 4px double $color-border;
+
     .header_div1{
         display:flex;
         align-items: center;
@@ -53,17 +74,155 @@ header{
         padding-bottom: 10px;
         padding-left: 4%;
         img{
-            width: 18%;
-            height: 18%;
+        width: 23%;
         }
         h1{
             padding-left: 2%;
+            color: $color-primario2;
+            font-size: 1.5rem;
         }
     }
     .header__home{
-        display:none;
+        display:block;
     }
     .header__vacio-mobile{
         display:none;
     }
+}
+main{
+    
+    .main_section1{
+        padding-top:80px;
+        text-align: center;
+        line-height: 1.7rem;
+        background-color: $color-primario1;
+        color:#f8f9fa;
+        border-end-end-radius: 100px;
+        .main_s1-titulo{
+            h2{
+                padding-bottom: 20px;
+                font-size: 3rem;
+                font-family: $fuente2;
+                font-weight: bold;
+                line-height: 3.5rem;
+                letter-spacing: .3px;
+            }
+            p,b{
+                font-family: $fuente1;
+                font-size: 1rem;
+                padding-bottom: 30px;
+            }
+            button{
+                margin-bottom:40px;
+                width:265px;
+                height:75px;
+                border: 1px solid $border-botones;
+                background:transparent;
+                border-radius: 7px;
+                p{
+                    width:80%;
+                    margin:10px auto;
+                    vertical-align: center;
+                    a{
+                        margin: 0 auto;
+                        color:$border-botones;
+                        font-size: 1.2rem;
+                        line-height:1.7rem;
+                        letter-spacing: .3px;
+                    }
+                }
+            }
+        }
+        .main_vacio-pc-img{
+            margin-bottom: 25px;
+        }
+        .main_vacio-pc-button{
+            margin-bottom:50px;
+            button{
+                padding:3px;
+                margin-left: 5px;
+                margin-right: 5px;
+                border-radius:3px;
+                a{
+                    color:black;
+                }
+            }
+        }
+        .main_div-whismiscal{
+            display:flex;
+            align-items: center;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            img{
+                width:45%;
+                margin-right: 2%;
+            }
+        }
+        .main_div_explicacion1{
+            padding-top: 35px;
+            padding-bottom: 35px;
+            img{
+                width:85%;
+            }
+        }
+    }
+    .main_section2{
+        text-align:center;
+        margin-top:80px;
+        letter-spacing: .4px;
+        figure{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            width:110px;
+            height:110px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color:rgb(255 234 238);
+            border-radius: 70px;
+        }
+        img{
+            width:70px;
+        }
+        strong,h3{
+            padding-top:15px;
+            padding-bottom: 15px;
+            font-size:1.55rem;
+            font-family:$fuente1;
+            color: $color-titulos;
+        }
+        h2{
+            padding-bottom: 50px;
+            font-size:2.1rem;
+            font-family: $fuente1;
+            font-weight: bold;
+        }
+        p,b{
+            padding-bottom: 40px;
+            font-size:1.2rem;
+            line-height: 1.5rem;
+            color:black;
+            opacity:.9;
+            span > b{
+                color:$border-botones;
+            }
+        }
+        .main_section2-interna{
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            justify-content: center;
+            width: 71%;
+            max-width:400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .main_section2-interna-div3{
+            .img3{
+                opacity:.95;
+            }
+        }
+    }
+
 }
