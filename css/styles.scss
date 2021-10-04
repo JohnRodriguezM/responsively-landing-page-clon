@@ -112,7 +112,7 @@ main{
                 font-size: 1rem;
                 padding-bottom: 30px;
             }
-            button{
+            .boton_uso{
                 margin-bottom:40px;
                 width:265px;
                 height:75px;
@@ -175,15 +175,15 @@ main{
             display:flex;
             justify-content: center;
             align-items: center;
-            width:110px;
-            height:110px;
+            width:90px;
+            height:90px;
             margin-left: auto;
             margin-right: auto;
             background-color:rgb(255 234 238);
             border-radius: 70px;
         }
         img{
-            width:70px;
+            width:50px;
         }
         strong,h3{
             padding-top:15px;
@@ -211,18 +211,138 @@ main{
         .main_section2-interna{
             display: flex;
             flex-wrap: wrap;
-            text-align: center;
             justify-content: center;
-            width: 71%;
-            max-width:400px;
+            text-align: center;
             margin-left: auto;
             margin-right: auto;
         }
+        .main_section2-interna-div1{
+            max-width: 420px;
+        }
+        .main_section2-interna-div2{
+            max-width: 420px;
+        }
         .main_section2-interna-div3{
+            max-width: 420px;
             .img3{
                 opacity:.95;
             }
         }
     }
+    .main_section3{
+        text-align: center;
+        padding-top:55px;
+        padding-bottom: 55px;
+        background-color:$background-frasesteve-jobs;
+        color:$color-titulos;
+        border-top-left-radius: 100px;
+        border-end-end-radius: 100px;
+        h2{
+            width:95%;
+            margin: 0 auto;
+            font-size:2.1rem;
+        }
+        p{
+            padding-top:20px;
+            font-size:1.4rem;
+            font-weight: bold;
+        }
+    }
+    .main_section4{
+        max-width:1200px;
+        margin: 0 auto;
+        text-align: center;
+        padding-top:50px;
+        background-color:$background-frasesteve-jobs;
+        border-top-right-radius: 100px;
+        video{
+            width: 85%;
+            max-width:450px;
+            border-radius: 10px;
+        }
+        h2,p{
+            width: 90%;
+            margin: 0 auto;
+            letter-spacing:.3px;
+        }
+        h2{
+            padding-top:20px;
+            padding-bottom:20px;
+            font-size:1.7rem;
+            font-weight: 500 italic;
+            color: $color-titulos;
+        }
+        p{
+            font-size:1.2rem;
+            color: black;opacity:.9;
+            padding-bottom:75px;
+        }
+        .main_section4-div1,.main_section4-div2,.main_section4-div3,.main_section4-div4{
+            /*despues de 700px
+            display:grid;
+            grid-template-columns: 60% auto;*/
+            display:grid;
+        }
+    }
+    .main_section5{
+        @extend .main_section1;
+        border-end-end-radius: 0px;
+        padding-top:35px;
+        .main_section5-div1{
+            h2{
+                font-size: 2rem;
+                padding-bottom:30px;
+            }
+            p{
+                width:90%;
+                margin: 0 auto;
+                font-size:1.15rem;
+                padding-bottom:40px;
+            }
+        }
+        .main_section5-div2{
+            @extend .main_s1-titulo;
+            button{
+                @extend .boton_uso;
+                padding-top:15px;
+            }
+        }
+    }
+/*en este se mete los nuevos section*/
+}/*este es el corchete del main*/
 
+
+
+@media(min-width:770px) {
+    main{
+        .main_section4{
+            .main_section4-div1,.main_section4-div2,.main_section4-div3,.main_section4-div4{
+                display: grid;
+                grid-template-columns: 50% 50%;
+                align-items: center;
+                padding-bottom:40px;
+            p{
+                padding-bottom: 0px;
+            }
+            }
+            .main_section4-div2{
+                .main_section4-video2{
+                    grid-column: 2/3;
+                }
+                .main_section4-texto2{
+                    grid-column:1/2;
+                    grid-row: 1/2;
+                }
+            }
+            .main_section4-div4{
+                .main_section4-video4{
+                    grid-column: 2/3;
+                }
+                .main_section4-texto4{
+                    grid-column:1/2;
+                    grid-row: 1/2;
+                }
+            }
+        }
+    }
 }

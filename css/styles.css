@@ -84,7 +84,10 @@ header .header__vacio-mobile {
   display: none;
 }
 
-main .main_section1 {
+main {
+  /*en este se mete los nuevos section*/
+}
+main .main_section1, main .main_section5 {
   padding-top: 80px;
   text-align: center;
   line-height: 1.7rem;
@@ -92,7 +95,7 @@ main .main_section1 {
   color: #f8f9fa;
   border-end-end-radius: 100px;
 }
-main .main_section1 .main_s1-titulo h2 {
+main .main_section1 .main_s1-titulo h2, main .main_section5 .main_s1-titulo h2, main .main_section5 .main_section5-div2 h2 {
   padding-bottom: 20px;
   font-size: 3rem;
   font-family: "El Messiri", sans-serif;
@@ -100,12 +103,12 @@ main .main_section1 .main_s1-titulo h2 {
   line-height: 3.5rem;
   letter-spacing: 0.3px;
 }
-main .main_section1 .main_s1-titulo p, main .main_section1 .main_s1-titulo b {
+main .main_section1 .main_s1-titulo p, main .main_section5 .main_s1-titulo p, main .main_section5 .main_section5-div2 p, main .main_section1 .main_s1-titulo b, main .main_section5 .main_s1-titulo b, main .main_section5 .main_section5-div2 b {
   font-family: "Andika New Basic", sans-serif;
   font-size: 1rem;
   padding-bottom: 30px;
 }
-main .main_section1 .main_s1-titulo button {
+main .main_section1 .main_s1-titulo .boton_uso, main .main_section5 .main_s1-titulo .boton_uso, main .main_section5 .main_section5-div2 .boton_uso, main .main_section5 .main_section5-div2 button {
   margin-bottom: 40px;
   width: 265px;
   height: 75px;
@@ -113,34 +116,34 @@ main .main_section1 .main_s1-titulo button {
   background: transparent;
   border-radius: 7px;
 }
-main .main_section1 .main_s1-titulo button p {
+main .main_section1 .main_s1-titulo .boton_uso p, main .main_section5 .main_s1-titulo .boton_uso p, main .main_section5 .main_section5-div2 .boton_uso p, main .main_section5 .main_section5-div2 button p {
   width: 80%;
   margin: 10px auto;
   vertical-align: center;
 }
-main .main_section1 .main_s1-titulo button p a {
+main .main_section1 .main_s1-titulo .boton_uso p a, main .main_section5 .main_s1-titulo .boton_uso p a, main .main_section5 .main_section5-div2 .boton_uso p a, main .main_section5 .main_section5-div2 button p a {
   margin: 0 auto;
   color: #fd2d55;
   font-size: 1.2rem;
   line-height: 1.7rem;
   letter-spacing: 0.3px;
 }
-main .main_section1 .main_vacio-pc-img {
+main .main_section1 .main_vacio-pc-img, main .main_section5 .main_vacio-pc-img {
   margin-bottom: 25px;
 }
-main .main_section1 .main_vacio-pc-button {
+main .main_section1 .main_vacio-pc-button, main .main_section5 .main_vacio-pc-button {
   margin-bottom: 50px;
 }
-main .main_section1 .main_vacio-pc-button button {
+main .main_section1 .main_vacio-pc-button button, main .main_section5 .main_vacio-pc-button button {
   padding: 3px;
   margin-left: 5px;
   margin-right: 5px;
   border-radius: 3px;
 }
-main .main_section1 .main_vacio-pc-button button a {
+main .main_section1 .main_vacio-pc-button button a, main .main_section5 .main_vacio-pc-button button a {
   color: black;
 }
-main .main_section1 .main_div-whismiscal {
+main .main_section1 .main_div-whismiscal, main .main_section5 .main_div-whismiscal {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -151,15 +154,15 @@ main .main_section1 .main_div-whismiscal {
   margin-left: auto;
   margin-right: auto;
 }
-main .main_section1 .main_div-whismiscal img {
+main .main_section1 .main_div-whismiscal img, main .main_section5 .main_div-whismiscal img {
   width: 45%;
   margin-right: 2%;
 }
-main .main_section1 .main_div_explicacion1 {
+main .main_section1 .main_div_explicacion1, main .main_section5 .main_div_explicacion1 {
   padding-top: 35px;
   padding-bottom: 35px;
 }
-main .main_section1 .main_div_explicacion1 img {
+main .main_section1 .main_div_explicacion1 img, main .main_section5 .main_div_explicacion1 img {
   width: 85%;
 }
 main .main_section2 {
@@ -177,15 +180,15 @@ main .main_section2 figure {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 110px;
-  height: 110px;
+  width: 90px;
+  height: 90px;
   margin-left: auto;
   margin-right: auto;
   background-color: #ffeaee;
   border-radius: 70px;
 }
 main .main_section2 img {
-  width: 70px;
+  width: 50px;
 }
 main .main_section2 strong, main .main_section2 h3 {
   padding-top: 15px;
@@ -216,15 +219,139 @@ main .main_section2 .main_section2-interna {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 71%;
-  max-width: 400px;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
+main .main_section2 .main_section2-interna-div1 {
+  max-width: 420px;
+}
+main .main_section2 .main_section2-interna-div2 {
+  max-width: 420px;
+}
+main .main_section2 .main_section2-interna-div3 {
+  max-width: 420px;
+}
 main .main_section2 .main_section2-interna-div3 .img3 {
   opacity: 0.95;
+}
+main .main_section3 {
+  text-align: center;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  background-color: #f4f2f9;
+  color: #212529;
+  border-top-left-radius: 100px;
+  border-end-end-radius: 100px;
+}
+main .main_section3 h2 {
+  width: 95%;
+  margin: 0 auto;
+  font-size: 2.1rem;
+}
+main .main_section3 p {
+  padding-top: 20px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+main .main_section4 {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 50px;
+  background-color: #f4f2f9;
+  border-top-right-radius: 100px;
+}
+main .main_section4 video {
+  width: 85%;
+  max-width: 450px;
+  border-radius: 10px;
+}
+main .main_section4 h2, main .main_section4 p {
+  width: 90%;
+  margin: 0 auto;
+  letter-spacing: 0.3px;
+}
+main .main_section4 h2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 1.7rem;
+  font-weight: 500 italic;
+  color: #212529;
+}
+main .main_section4 p {
+  font-size: 1.2rem;
+  color: black;
+  opacity: 0.9;
+  padding-bottom: 75px;
+}
+main .main_section4 .main_section4-div1, main .main_section4 .main_section4-div2, main .main_section4 .main_section4-div3, main .main_section4 .main_section4-div4 {
+  /*despues de 700px
+  display:grid;
+  grid-template-columns: 60% auto;*/
+  display: -ms-grid;
+  display: grid;
+}
+main .main_section5 {
+  border-end-end-radius: 0px;
+  padding-top: 35px;
+}
+main .main_section5 .main_section5-div1 h2 {
+  font-size: 2rem;
+  padding-bottom: 30px;
+}
+main .main_section5 .main_section5-div1 p {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 1.15rem;
+  padding-bottom: 40px;
+}
+main .main_section5 .main_section5-div2 button {
+  padding-top: 15px;
+}
+
+/*este es el corchete del main*/
+@media (min-width: 770px) {
+  main .main_section4 .main_section4-div1, main .main_section4 .main_section4-div2, main .main_section4 .main_section4-div3, main .main_section4 .main_section4-div4 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+    grid-template-columns: 50% 50%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 40px;
+  }
+  main .main_section4 .main_section4-div1 p, main .main_section4 .main_section4-div2 p, main .main_section4 .main_section4-div3 p, main .main_section4 .main_section4-div4 p {
+    padding-bottom: 0px;
+  }
+  main .main_section4 .main_section4-div2 .main_section4-video2 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+  main .main_section4 .main_section4-div2 .main_section4-texto2 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  main .main_section4 .main_section4-div4 .main_section4-video4 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+  main .main_section4 .main_section4-div4 .main_section4-texto4 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
 }
