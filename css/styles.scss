@@ -509,7 +509,9 @@ footer{
 }
 @media(min-width:1200px){
     header{
-        grid-template-columns: 40% 60%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        grid-template-columns: 30% 70%;
         .header_div1{
             .img_header{
                 width: 13%;
@@ -517,8 +519,42 @@ footer{
         }
         .header__vacio-mobile{
             display:flex;
-            button,img,span{
+            align-items: center;
+            justify-content: space-evenly;
+            ul{
+                margin-right: 5px;
+                margin-left: 5px;
+                li{
+                    margin-right:10px;
+                    margin-left: 10px;
+                }
+            }
+            button,img{
                 display:block;
+            }
+            span{
+                display:inline;
+            }
+            button{
+                background-color:$border-botones;
+                width:130px;
+                height:60px;
+                border-radius:10px;
+                a{
+                    color:$color-primario2;
+                }
+            }
+        }
+    }
+    main{
+        .main_section1{
+            .main_vacio-pc-img{
+                display:none;
+            }
+            .main_div-whismiscal{
+                width:40%;
+                padding-top:30px;
+                padding-bottom: 30px;
             }
         }
     }

@@ -499,8 +499,10 @@ footer .hellos {
 }
 @media (min-width: 1200px) {
   header {
-    -ms-grid-columns: 40% 60%;
-    grid-template-columns: 40% 60%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    -ms-grid-columns: 30% 70%;
+    grid-template-columns: 30% 70%;
   }
   header .header_div1 .img_header {
     width: 13%;
@@ -509,8 +511,43 @@ footer .hellos {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
-  header .header__vacio-mobile button, header .header__vacio-mobile img, header .header__vacio-mobile span {
+  header .header__vacio-mobile ul {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  header .header__vacio-mobile ul li {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  header .header__vacio-mobile button, header .header__vacio-mobile img {
     display: block;
+  }
+  header .header__vacio-mobile span {
+    display: inline;
+  }
+  header .header__vacio-mobile button {
+    background-color: #fd2d55;
+    width: 130px;
+    height: 60px;
+    border-radius: 10px;
+  }
+  header .header__vacio-mobile button a {
+    color: #fff;
+  }
+
+  main .main_section1 .main_vacio-pc-img, main .main_section5 .main_vacio-pc-img, main .main_section6 .main_vacio-pc-img {
+    display: none;
+  }
+  main .main_section1 .main_div-whismiscal, main .main_section5 .main_div-whismiscal, main .main_section6 .main_div-whismiscal {
+    width: 40%;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
