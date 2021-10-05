@@ -400,6 +400,9 @@ footer .hellos {
   header .header_div1 h1 {
     font-size: 2rem;
   }
+  header .header_div1 .img_header {
+    width: 5%;
+  }
 
   main .main_section1 .main_s1-titulo h2, main .main_section5 .main_s1-titulo h2, main .main_section6 .main_s1-titulo h2, main .main_section5 .main_section5-div2 h2, main .main_section6 .main_section5-div2 h2, main .main_section6 .main_section6-div1 h2 {
     font-size: 3.4rem;
