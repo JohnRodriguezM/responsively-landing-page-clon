@@ -55,6 +55,9 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
   background-color: #1d1b26;
   border-bottom: 4px double #424049;
 }
@@ -85,9 +88,10 @@ header .header__vacio-mobile {
 }
 
 main {
+  padding-top: 70px;
   /*en este se mete los nuevos section*/
 }
-main .main_section1, main .main_section5 {
+main .main_section1, main .main_section5, main .main_section6 {
   padding-top: 80px;
   text-align: center;
   line-height: 1.7rem;
@@ -95,7 +99,10 @@ main .main_section1, main .main_section5 {
   color: #f8f9fa;
   border-end-end-radius: 100px;
 }
-main .main_section1 .main_s1-titulo h2, main .main_section5 .main_s1-titulo h2, main .main_section5 .main_section5-div2 h2 {
+main .main_section1 .main_s1-titulo h2, main .main_section5 .main_s1-titulo h2, main .main_section6 .main_s1-titulo h2, main .main_section6 .main_section6-div1 h2, main .main_section5 .main_section5-div2 h2, main .main_section6 .main_section5-div2 h2 {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
   padding-bottom: 20px;
   font-size: 3rem;
   font-family: "El Messiri", sans-serif;
@@ -103,12 +110,15 @@ main .main_section1 .main_s1-titulo h2, main .main_section5 .main_s1-titulo h2, 
   line-height: 3.5rem;
   letter-spacing: 0.3px;
 }
-main .main_section1 .main_s1-titulo p, main .main_section5 .main_s1-titulo p, main .main_section5 .main_section5-div2 p, main .main_section1 .main_s1-titulo b, main .main_section5 .main_s1-titulo b, main .main_section5 .main_section5-div2 b {
+main .main_section1 .main_s1-titulo p, main .main_section5 .main_s1-titulo p, main .main_section6 .main_s1-titulo p, main .main_section6 .main_section6-div1 p, main .main_section5 .main_section5-div2 p, main .main_section6 .main_section5-div2 p, main .main_section1 .main_s1-titulo b, main .main_section5 .main_s1-titulo b, main .main_section6 .main_s1-titulo b, main .main_section6 .main_section6-div1 b, main .main_section5 .main_section5-div2 b, main .main_section6 .main_section5-div2 b {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
   font-family: "Andika New Basic", sans-serif;
   font-size: 1rem;
   padding-bottom: 30px;
 }
-main .main_section1 .main_s1-titulo .boton_uso, main .main_section5 .main_s1-titulo .boton_uso, main .main_section5 .main_section5-div2 .boton_uso, main .main_section5 .main_section5-div2 button {
+main .main_section1 .main_s1-titulo .boton_uso, main .main_section5 .main_s1-titulo .boton_uso, main .main_section6 .main_s1-titulo .boton_uso, main .main_section6 .main_section6-div1 .boton_uso, main .main_section6 .main_section6-div1 button, main .main_section5 .main_section5-div2 .boton_uso, main .main_section6 .main_section5-div2 .boton_uso, main .main_section5 .main_section5-div2 button, main .main_section6 .main_section5-div2 button {
   margin-bottom: 40px;
   width: 265px;
   height: 75px;
@@ -116,34 +126,34 @@ main .main_section1 .main_s1-titulo .boton_uso, main .main_section5 .main_s1-tit
   background: transparent;
   border-radius: 7px;
 }
-main .main_section1 .main_s1-titulo .boton_uso p, main .main_section5 .main_s1-titulo .boton_uso p, main .main_section5 .main_section5-div2 .boton_uso p, main .main_section5 .main_section5-div2 button p {
+main .main_section1 .main_s1-titulo .boton_uso p, main .main_section5 .main_s1-titulo .boton_uso p, main .main_section6 .main_s1-titulo .boton_uso p, main .main_section6 .main_section6-div1 .boton_uso p, main .main_section6 .main_section6-div1 button p, main .main_section5 .main_section5-div2 .boton_uso p, main .main_section6 .main_section5-div2 .boton_uso p, main .main_section5 .main_section5-div2 button p, main .main_section6 .main_section5-div2 button p {
   width: 80%;
   margin: 10px auto;
   vertical-align: center;
 }
-main .main_section1 .main_s1-titulo .boton_uso p a, main .main_section5 .main_s1-titulo .boton_uso p a, main .main_section5 .main_section5-div2 .boton_uso p a, main .main_section5 .main_section5-div2 button p a {
+main .main_section1 .main_s1-titulo .boton_uso p a, main .main_section5 .main_s1-titulo .boton_uso p a, main .main_section6 .main_s1-titulo .boton_uso p a, main .main_section6 .main_section6-div1 .boton_uso p a, main .main_section6 .main_section6-div1 button p a, main .main_section5 .main_section5-div2 .boton_uso p a, main .main_section6 .main_section5-div2 .boton_uso p a, main .main_section5 .main_section5-div2 button p a, main .main_section6 .main_section5-div2 button p a {
   margin: 0 auto;
   color: #fd2d55;
   font-size: 1.2rem;
   line-height: 1.7rem;
   letter-spacing: 0.3px;
 }
-main .main_section1 .main_vacio-pc-img, main .main_section5 .main_vacio-pc-img {
+main .main_section1 .main_vacio-pc-img, main .main_section5 .main_vacio-pc-img, main .main_section6 .main_vacio-pc-img {
   margin-bottom: 25px;
 }
-main .main_section1 .main_vacio-pc-button, main .main_section5 .main_vacio-pc-button {
+main .main_section1 .main_vacio-pc-button, main .main_section5 .main_vacio-pc-button, main .main_section6 .main_vacio-pc-button {
   margin-bottom: 50px;
 }
-main .main_section1 .main_vacio-pc-button button, main .main_section5 .main_vacio-pc-button button {
+main .main_section1 .main_vacio-pc-button button, main .main_section5 .main_vacio-pc-button button, main .main_section6 .main_vacio-pc-button button {
   padding: 3px;
   margin-left: 5px;
   margin-right: 5px;
   border-radius: 3px;
 }
-main .main_section1 .main_vacio-pc-button button a, main .main_section5 .main_vacio-pc-button button a {
+main .main_section1 .main_vacio-pc-button button a, main .main_section5 .main_vacio-pc-button button a, main .main_section6 .main_vacio-pc-button button a {
   color: black;
 }
-main .main_section1 .main_div-whismiscal, main .main_section5 .main_div-whismiscal {
+main .main_section1 .main_div-whismiscal, main .main_section5 .main_div-whismiscal, main .main_section6 .main_div-whismiscal {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -154,15 +164,15 @@ main .main_section1 .main_div-whismiscal, main .main_section5 .main_div-whismisc
   margin-left: auto;
   margin-right: auto;
 }
-main .main_section1 .main_div-whismiscal img, main .main_section5 .main_div-whismiscal img {
+main .main_section1 .main_div-whismiscal img, main .main_section5 .main_div-whismiscal img, main .main_section6 .main_div-whismiscal img {
   width: 45%;
   margin-right: 2%;
 }
-main .main_section1 .main_div_explicacion1, main .main_section5 .main_div_explicacion1 {
+main .main_section1 .main_div_explicacion1, main .main_section5 .main_div_explicacion1, main .main_section6 .main_div_explicacion1 {
   padding-top: 35px;
   padding-bottom: 35px;
 }
-main .main_section1 .main_div_explicacion1 img, main .main_section5 .main_div_explicacion1 img {
+main .main_section1 .main_div_explicacion1 img, main .main_section5 .main_div_explicacion1 img, main .main_section6 .main_div_explicacion1 img {
   width: 85%;
 }
 main .main_section2 {
@@ -204,6 +214,9 @@ main .main_section2 h2 {
   font-weight: bold;
 }
 main .main_section2 p, main .main_section2 b {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
   padding-bottom: 40px;
   font-size: 1.2rem;
   line-height: 1.5rem;
@@ -295,26 +308,116 @@ main .main_section4 .main_section4-div1, main .main_section4 .main_section4-div2
   display: -ms-grid;
   display: grid;
 }
-main .main_section5 {
+main .main_section5, main .main_section6 {
   border-end-end-radius: 0px;
   padding-top: 35px;
 }
-main .main_section5 .main_section5-div1 h2 {
+main .main_section5 .main_section5-div1 h2, main .main_section6 .main_section5-div1 h2 {
   font-size: 2rem;
   padding-bottom: 30px;
 }
-main .main_section5 .main_section5-div1 p {
+main .main_section5 .main_section5-div1 p, main .main_section6 .main_section5-div1 p {
   width: 90%;
   margin: 0 auto;
   font-size: 1.15rem;
   padding-bottom: 40px;
 }
-main .main_section5 .main_section5-div2 button {
-  padding-top: 15px;
+main .main_section5 .main_section5-div2 button, main .main_section6 .main_section5-div2 button {
+  padding-top: 12.5px;
+}
+main .main_section6 {
+  padding-bottom: 30px;
+  background-color: #fff;
+}
+main .main_section6 .main_section6-div1 h2 {
+  margin: 0 auto;
+  color: #1d1b26;
+  font-size: 2rem;
+}
+main .main_section6 .main_section6-div1 button {
+  padding-top: 12.5px;
 }
 
 /*este es el corchete del main*/
+footer {
+  text-align: center;
+}
+footer ul li {
+  width: 20px;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+footer p {
+  width: 90%;
+  margin: 0 auto;
+  letter-spacing: 0.3px;
+  padding-top: 15px;
+  font-size: 1.1rem;
+  padding-bottom: 70px;
+}
+footer .hellos {
+  z-index: 100;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/*breakpoints*/
+@media (min-width: 520px) {
+  header .header_div1 .img_header {
+    width: 15%;
+  }
+
+  main .main_section1 .main_div_explicacion1 .screenshot1, main .main_section5 .main_div_explicacion1 .screenshot1, main .main_section6 .main_div_explicacion1 .screenshot1 {
+    width: 75%;
+  }
+  main .main_section6 .main_section6-div1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  main .main_section6 .main_section6-div1 button {
+    margin-bottom: 0;
+  }
+  main .main_section6 .main_section6-div1 img {
+    display: none;
+  }
+}
 @media (min-width: 770px) {
+  header .header_div1 h1 {
+    font-size: 2rem;
+  }
+
+  main .main_section1 .main_s1-titulo h2, main .main_section5 .main_s1-titulo h2, main .main_section6 .main_s1-titulo h2, main .main_section5 .main_section5-div2 h2, main .main_section6 .main_section5-div2 h2, main .main_section6 .main_section6-div1 h2 {
+    font-size: 3.4rem;
+  }
+  main .main_section1 .main_s1-titulo p, main .main_section5 .main_s1-titulo p, main .main_section6 .main_s1-titulo p, main .main_section5 .main_section5-div2 p, main .main_section6 .main_section5-div2 p, main .main_section6 .main_section6-div1 p, main .main_section1 .main_s1-titulo b, main .main_section5 .main_s1-titulo b, main .main_section6 .main_s1-titulo b, main .main_section5 .main_section5-div2 b, main .main_section6 .main_section5-div2 b, main .main_section6 .main_section6-div1 b {
+    font-size: 1.3rem;
+  }
+  main .main_section1 .main_vacio-pc-button, main .main_section5 .main_vacio-pc-button, main .main_section6 .main_vacio-pc-button {
+    display: none;
+  }
+  main .main_section1 .main_div-whismiscal, main .main_section5 .main_div-whismiscal, main .main_section6 .main_div-whismiscal {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main .main_section1 .main_div-whismiscal p::after, main .main_section5 .main_div-whismiscal p::after, main .main_section6 .main_div-whismiscal p::after {
+    content: ".Get $100 free credit";
+  }
   main .main_section4 .main_section4-div1, main .main_section4 .main_section4-div2, main .main_section4 .main_section4-div3, main .main_section4 .main_section4-div4 {
     display: -ms-grid;
     display: grid;
@@ -353,5 +456,61 @@ main .main_section5 .main_section5-div2 button {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1/2;
+  }
+}
+@media (min-width: 850px) {
+  * {
+    font-size: 105%;
+  }
+
+  header {
+    -ms-grid-columns: 65% 35%;
+    grid-template-columns: 65% 35%;
+  }
+  header .header__home {
+    display: none;
+  }
+  header .header__vacio-mobile {
+    display: block;
+  }
+  header .header__vacio-mobile button, header .header__vacio-mobile img, header .header__vacio-mobile span {
+    display: none;
+  }
+  header .header__vacio-mobile ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin-right: 25px;
+  }
+  header .header__vacio-mobile ul li {
+    display: inline-block;
+  }
+  header .header__vacio-mobile ul li a {
+    font-size: 1.2rem;
+    color: #fff;
+  }
+
+  footer p {
+    font-size: 1.35rem;
+  }
+}
+@media (min-width: 1200px) {
+  header {
+    -ms-grid-columns: 40% 60%;
+    grid-template-columns: 40% 60%;
+  }
+  header .header_div1 .img_header {
+    width: 13%;
+  }
+  header .header__vacio-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .header__vacio-mobile button, header .header__vacio-mobile img, header .header__vacio-mobile span {
+    display: block;
   }
 }
